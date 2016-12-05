@@ -1,0 +1,175 @@
+html body {
+    background: #8199A3;
+    /*background-image: radial-gradient(circle, green 0%, purple 20%, orange 100%);*/
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+
+#container {
+    width: 310vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+
+.section {
+    margin-top: 20vh;
+    margin-left: 30vw;
+    font-size: 3vmin;
+    float: left;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 5%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 7vh;
+    color: white;
+    position: relative;
+    z-index: 4;
+}
+.contours {
+    margin: 0;
+    float: left;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.cases {
+    margin-top: 0vh;
+    margin-left: 16vw;
+    float: left;
+    height: 100vh;
+    width: 68vw;
+    position: relative;
+    z-index: 2;
+}
+
+
+.section_1_imgs{
+    position: absolute;
+    height: 60vh;
+    width: 40vw;
+    left: 30vw;
+    top: 20vh;
+    z-index: 3;
+}
+
+.section_1_img {
+    margin-top: 4vh;
+    margin-left: 4vw;
+    border-radius: 5%;
+    width: 14vw;
+    height: 24vh;
+}
+
+    
+
+#navbar {
+    top: 0;
+    left: 6vw;
+    width: 88vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 11;
+}
+
+#pellicule {
+    top: 0;
+    left: 6vw;
+    width: 88vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 11;
+    
+}
+
+#selecteur {
+    top: 0;
+    left: 6vw;
+    width: 22vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 11;
+    
+}
+
+#navbar_bas {
+    top: 90vh;
+    left: 6vw;
+    width: 88vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 11;
+}
+
+#pellicule_bas {
+    top: 90vh;
+    left: 6vw;
+    width: 88vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 11;
+    
+}
+
+
+.bord {
+    height: 100vh;
+    width: 6vw;
+    background: white;
+    opacity: 0.5;
+    top: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.bord:hover {
+    opacity: 0.9;
+}
+
+#bord_gauche {
+    position: fixed;
+    left: 0;
+}
+
+#bord_droit {
+    position: fixed;
+    right: 0;
+}
+
+.fleche {
+    margin: 1vw;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    height: 4vw;
+}
+
+#fleche_droite {
+    float: right;
+}
+
+
+
+#section1 { background: #444B54; }
+
+#section2 { background: #DB2B39; }
+
+#section3 { background: #ff715b; }
+
+#section4 { background: #5D6090; }
+
+
+/*border: 2.5vmin solid #444B54;*/
+
+
+
+
+
+
+
+
+
