@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Steadicam</title>
+    <link rel="stylesheet" type="text/css" href="camera_portee.css">
+	
+  </head>
+
+<body>
+
+<a href="../page_accueil.html" style="background: none;"><img src="../Ressources/bouton_retour.png" id="retour" style="position:fixed; width:6vw; heith:5vw; left:1vw; top:2vh;  background:black; border-radius:50%; opacity:0.4;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.4"/></a>
+
+
+
+<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="steadicam.webm" type="video/webm">
+<source src="steadicam.mp4" type="video/mp4">
+</video>
+
+		<div id="polina">
+			<h1>Steadicam</h1>
+			<h2>Comment ça marche ?</h2>
+			<p>Mis au point par l'opérateur Garrett Brown en 1973, ce système de stabilisateur
+            d'image pour caméra portée offre, grâce à sa grande mobilité, des mouvements d'une
+            fluidité exceptionnelle. Libéré de la lourde machinerie classique, l'opérateur évolue
+            sur n'importe quel terrain, la caméra fixée au corps par un harnais et reliée à un bras
+            articulé. Un jeu de contrepoids compense les heurts éventuels. Expérimentée au cinéma en 1976
+            et récompensée par un Oscar en 1978, l'invention de Brown intéresse Kubrick, qui le sollicite
+            pour le tournage de son film.</p>
+			
+            <h2>Aller plus loin</h2>
+
+		<p>
+               Une version perfectionnée de l'appareil permet à l'opérateur de filmer en frôlant les murs
+               et près du sol, en liaison avec le cinéaste par radio et système de contrôle vidéo. Kubrick
+               peut pleinement tirer parti des décors de l'hôtel Overlook, dont les pièces reconstituées en
+               studio sont attenantes, la caméra passant de l'une à l'autre, empruntant couloirs et escaliers.
+               Ainsi, les lancinantes déambulations de Danny en tricycle dans l'hôtel sont filmées à hauteur
+               de l'enfant, depuis une chaise roulante.
+       </p>
+
+<button>Pause</button>
+</div>
+
+<script type="text/javascript" src="camera_portee.js"></script>
+
+<div id="fatoumata">
+	<h2>Shining - Stanley Kubrick - 1980</h2>
+			
+</div>	
+</body>
+
+</html>

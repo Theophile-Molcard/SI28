@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Caméra portée</title>
+    <link rel="stylesheet" type="text/css" href="camera_portee.css">
+	
+  </head>
+
+<body>
+
+<a href="../page_accueil.html" style="background: none;"><img src="../Ressources/bouton_retour.png" id="retour" style="position:fixed; width:6vw; heith:5vw; left:1vw; top:2vh;  background:black; border-radius:50%; opacity:0.4;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.4"/></a>
+
+
+
+<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="camera_portee.webm" type="video/webm">
+<source src="camera_portee.mp4" type="video/mp4">
+</video>
+
+
+
+		<div id="polina">
+			<h1>Caméra portée</h1>
+			<h2>Comment ça marche ?</h2>
+			<p>Dans un mouvement en caméra portée, la caméra n’est pas fixée à
+            un trépied mais directement portée par le cadreur. Le mouvement est
+            donc celui de l’opérateur. Cela donne une liberté immense mais aboutit
+            très souvent à une image assez instable. Le mouvement en caméra portée
+            permet au réalisateur de créer un malaise, une incertitude chez le spectateur.
+            L’effet est d’autant plus significatif si le plan en caméra portée est utilisé
+            en contraste avec un ou des plans fixes.</p>
+			
+            <h2>Aller plus loin</h2>
+
+		<p>
+                Outres ses avantages dramaturgiques certains, le plan en caméra portée a aussi
+                l’avantage de nécessiter très peu de matériel, la machinerie étant remplacée par
+                l’opérateur. Cela peut s’avérer très utile pour la réalisation de films amateurs
+                ou à petit budget, à condition de ne pas trop en abuser et de ne l’utiliser que
+                lorsque cela enrichit réellement la séquence.
+       </p>
+<button>Pause</button>
+</div>
+
+<script type="text/javascript" src="camera_portee.js"></script>
+
+<div id="fatoumata">
+	<h2>Il faut sauver le soldat Ryan - Steven Spielberg - 1998</h2>
+			
+</div>	
+</body>
+
+</html>

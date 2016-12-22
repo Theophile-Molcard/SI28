@@ -3,12 +3,13 @@
 <head>
 
     <meta charset="utf-8" />
-    
     <link rel="stylesheet" href="accueil.css" />
 
 </head>
 
 <body>
+    
+    <a href="Generique/generique.html"> <img id="generique" src="Ressources/sortie-05-05.png" /> </a>
 
 
     <div class="bord" id="bord_gauche" onmouseover="defilement(-1);" onmouseout="stop(); out_borders()">
@@ -20,60 +21,76 @@
     </div>
 
     <div id="navbar">
-        <img id="pellicule" src="ressources/pelicule_titre_12.png" />
-        <img id="selecteur" src="Ressources/selecteur_pel.png" />
+        <img id="pellicule" src="ressources/pelicule_titre_haut-01.png" />
+        <img id="selecteur" src="Ressources/selecteur_pel.png" onload="maj_select();"/>
+        <div class="titres_pellicule" onclick="deplace_to_section(1);"></div>
+        <div class="titres_pellicule" onclick="deplace_to_section(2);"></div>
+        <div class="titres_pellicule" onclick="deplace_to_section(3);"></div>
+        <div class="titres_pellicule" onclick="deplace_to_section(4);"></div>
     </div>
 
-    <div id="navbar_bas">
-        <img id="pellicule_bas" src="ressources/pelicule_titre_12.png" />
-    </div>
 
     <div id="container">
         
 
         <div class="contours" onmouseover="zoom0(1)">
-            <div class="cases" onmouseover="zoom0(0)">
-                
-            </div>
+            <div class="cases" onmouseover="zoom0(0)"></div>
+            <div class="cases" onmouseover="zoom0(0)"></div>
+            <div class="cases" onmouseover="zoom0(0)"></div>
+            <div class="cases" onmouseover="zoom0(0)"></div>
         </div>
 
-        <div class="section" id="section1" onmouseover="section_id = this.id; zoom0(0);" onwheel="zoomer(event);" onclick="zoom_total(event);"><br><br><br>
-            Montage
-        </div>
+        
+        <img class="section" id="section1" onmouseover="section_id = this.id; zoom0(0);" onwheel="zoomer(event);" onclick="zoom_total(event);" src="Ressources/montage-01.png">
         
         <div class="section_1_imgs" id="section1_img" onwheel="zoomer(event);" onclick="zoom_total(event);">
             
             <a href="Montage/regle_des_tiers.html"><img class="section_1_img" src="Ressources/section_1_1.png"></a>
-            
             <a href="Montage/sens_lecture.html"><img class="section_1_img" src="Ressources/section_1_2.png"></a>
-            
             <a href="Montage/lignes_directrices.html"><img class="section_1_img" src="Ressources/section_1_3.png"></a>
-            
             <a href="Montage/formes.html"><img class="section_1_img" src="Ressources/section_1_4.png"></a>
             
-            
-            
         </div>
 
         
 
-        <div class="section" id="section2" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);"><br><br><br>
+        <img src="Ressources/cadrage.png" class="section" id="section2" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);">
+        
+        <div class="section_2_imgs" id="section2_img" onwheel="zoomer(event);" onclick="zoom_total(event);">
             
-            Cadrage
-            
-        </div>
-
-        <div class="section" id="section3" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);"><br><br><br>
-            
-            Lumières
+            <a href="Cadrage/tres_gros_plan.html"><img class="section_2_img" src="Ressources/Cadrage/trs_gros-12.png"></a>
+            <a href="Cadrage/gros_plan.html"><img class="section_2_img" src="Ressources/Cadrage/gros-11.png"></a>
+            <a href="Cadrage/plan_rapproche.html"><img class="section_2_img" src="Ressources/Cadrage/rapproche-10.png"></a>
+            <a href="Cadrage/plan_americain.html"><img class="section_2_img" src="Ressources/Cadrage/americain-09.png"></a>
+            <a href="Cadrage/plan_moyen.html"><img class="section_2_img" src="Ressources/Cadrage/moyen-08.png"></a>
+            <a href="Cadrage/plan_d_ensemble.html"><img class="section_2_img" src="Ressources/Cadrage/ensemble-07.png"></a>
+            <a href="Cadrage/plan_general.html"><img class="section_2_img" id="plan_general" src="Ressources/Cadrage/general-06.png"></a>
             
         </div>
         
-        <div class="section" id="section4" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);"><br><br><br>
+    
+        
+        <img src="Ressources/lumieres.png"  class="section" id="section3" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);">
+        
+        <div class="section_3_imgs" id="section3_img" onwheel="zoomer(event);" onclick="zoom_total(event);">
             
-            Mouvements de caméra
+            <a href="Lumiere/lumiere_douce.html"><img class="section_3_img" src="Ressources/Lumiere/DOUCE-21.png"></a>
+            <a href="Lumiere/lumiere_dure.html"><img class="section_3_img" src="Ressources/Lumiere/DURE-20.png"></a>
+            <a href="Lumiere/lumiere_frontale.html"><img class="section_3_img" src="Ressources/Lumiere/FRONTALE-22.png"></a>
+            <a href="Lumiere/contre_jour.html"><img class="section_3_img" src="Ressources/Lumiere/CONTREJOUR-23.png"></a>
             
         </div>
+        
+        <img src="Ressources/camera.png" class="section" id="section4" onmouseover="section_id = this.id" onwheel="zoomer(event);" onclick="zoom_total(event);" onmouseout="zoom0(event);">
+        
+        <div class="section_4_imgs" id="section4_img" onwheel="zoomer(event);" onclick="zoom_total(event);">
+            
+            <a href="Camera/Travelling_horizontal.html"><img class="section_4_img" src="Ressources/Camera/TRAVELLING_Artboard%2018%20copy.png"></a>
+            <a href="Camera/camera_portee.html"><img class="section_4_img" src="Ressources/Camera/CAMERAPORTEE_Artboard%2020.png"></a>
+            <a href="Camera/steadicam.html"><img class="section_4_img" src="Ressources/Camera/STEADICAM-16.png"></a>
+            <a href="Camera/POV.html"><img class="section_4_img" src="Ressources/Camera/PDV_Artboard%2018.png"></a>
+            
+        </div3
 
     </div>
 

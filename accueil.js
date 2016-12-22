@@ -72,13 +72,20 @@ function zoomer(event) {
     }
 }
 
-function zoom_total(event) {
+function zoom_total(event) {    
+    
+    if (section_id != null) {
+        section_id_image = section_id+"_img";
+    }
+    
     grossir = (100/60);
     grossir_images = grossir/1.5;
     document.getElementById(section_id).style.transform = "scale("+grossir+")";
     document.getElementById(section_id).style.opacity = 0;
     document.getElementById(section_id_image).style.transform = "scale("+grossir_images+")";
     document.getElementById(section_id_image).style.opacity = 1;
+    document.getElementById(section_id).style.zIndex = 3;
+    document.getElementById(section_id_image).style.zIndex = 4;
 }
 
 
@@ -104,6 +111,26 @@ function zoom0(active) {
     }
     else 
         console.log("nope");
+}
+
+var a, b;
+
+function deplace_to_section(num_titre) {
+    
+    a = 6+(22*(num_titre-1));
+    document.getElementById("selecteur").style.left = a+"vw";
+    b = (a-6)*window.innerWidth / 31.4;
+    window.scrollTo(b, 0, {behavior: 'smooth'});
+    
+    
+}
+
+
+function maj_select() {
+    
+    document.getElementById("selecteur").style.left = (6 + 31.4*window.scrollX / window.innerWidth)+"vw";
+    
+    
 }
 
 

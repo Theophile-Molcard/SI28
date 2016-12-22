@@ -1,0 +1,86 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:100');
+
+
+body {
+		font-family: 'Lato';
+		background-color: #000000;
+		color: #fff;
+		width: 100%;
+        overflow: hidden;
+}
+
+section {
+		width: 400px;
+		position: absolute;
+		top: 100%;
+		-webkit-animation: 60s movieCredits linear infinite;
+		moz-animation: 60s movieCredits linear infinite;
+		animation: 60s movieCredits linear infinite;
+		left: 50%;
+		margin-left: -200px;
+}
+
+h1 {
+		font-size: 50px;
+		font-style: bold;
+		text-align: center;
+}
+
+h3 {
+		font-size: 22px;
+		text-align: center;
+}
+
+
+
+ul li{
+  display: inline-block; /* Permet d'aligner les éléments les uns à coté des autres*/
+  color: #fff;
+  margin: 0 0 0 70px;}
+
+a {
+		display:block;
+		font-size: 18px;
+		text-align: center;
+		color: #BDC3C7;
+}
+
+ul li a {
+		display:block;
+		font-size: 22px;
+		text-align: center;
+		color: #fff;
+}
+
+p {
+		font-size: 18px;
+		text-align: center;
+		color: #BDC3C7;
+}
+
+@-webkit-keyframes movieCredits {
+		0% {
+				top: 100%
+		}
+		100% {
+				top: -500%
+		}
+}
+
+@-moz-keyframes movieCredits {
+		0% {
+				top: 100%
+		}
+		100% {
+				top: -500%
+		}
+}
+
+@keyframes movieCredits {
+		0% {
+				top: 100%
+		}
+		100% {
+				top: -500%
+		}
+}
